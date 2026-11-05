@@ -17,4 +17,4 @@ for (const [filePath, content] of Object.entries(files)) {
   if (!fs.existsSync(dirName)) fs.mkdirSync(dirName, { recursive: true });
   fs.writeFileSync(fullPath, content, 'utf8');
   console.log(`✅ Page Created: ${filePath}`);
-}
+} 
