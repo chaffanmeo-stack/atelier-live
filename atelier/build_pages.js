@@ -18,3 +18,4 @@ for (const [filePath, content] of Object.entries(files)) {
   fs.writeFileSync(fullPath, content, 'utf8');
   console.log(`✅ Page Created: ${filePath}`);
 } 
+ 
