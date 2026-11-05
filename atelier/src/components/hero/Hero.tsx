@@ -1,13 +1,11 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import FabricBackgroundLazy from "../canvas/FabricBackgroundLazy";
 
 export default function Hero() {
   return (
     <section className="relative isolate flex min-h-[100svh] items-center justify-center overflow-hidden bg-charcoal">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,#3a3226_0%,#1C1C1E_65%)]" />
-      <FabricBackgroundLazy />
       
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.5 }} className="relative z-10 mx-auto max-w-5xl px-6 text-center">
         <p className="mb-8 text-xs uppercase tracking-luxe text-gold-light">Luxury Unstitched Collection</p>
